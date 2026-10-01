@@ -1,0 +1,10 @@
+{
+  "name": "grade",
+  "version": "0.1.0",
+  "description": "Deterministic 0-100 capability-hygiene score for MCP servers.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

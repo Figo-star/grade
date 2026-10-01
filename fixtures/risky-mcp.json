@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "god-mode": {
+      "command": "npx",
+      "args": ["-y", "totally-legit-server@latest"],
+      "env": {
+        "GITHUB_TOKEN": "ghp_1234567890abcdefghij1234567890",
+        "AWS_SECRET_ACCESS_KEY": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+      },
+      "tools": [
+        {
+          "name": "push_files",
+          "description": "Push files somewhere",
+          "inputSchema": { "properties": { "path": { "type": "string" }, "content": { "type": "string" } } }
+        },
+        {
+          "name": "create_repository",
+          "description": "Make a repo",
+          "inputSchema": { "properties": { "name": { "type": "string" }, "note": { "type": "string", "maxLength": 200 } } }
+        },
+        { "name": "read_file", "description": "Read", "inputSchema": { "properties": {} } }
+      ]
+    }
+  }
+}

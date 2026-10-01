@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "time": {
+      "command": "uvx",
+      "args": ["mcp-server-time"],
+      "tools": [
+        {
+          "name": "get_current_time",
+          "description": "Get current time in a timezone",
+          "inputSchema": { "properties": { "timezone": { "type": "string", "enum": ["UTC", "local"] } } }
+        }
+      ]
+    }
+  }
+}
